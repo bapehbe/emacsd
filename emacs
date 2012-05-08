@@ -9,3 +9,6 @@
 ;(add-to-list 'load-path "~/.emacs.d/slime/")  ; your SLIME directory
 ;(require 'slime)
 ;(slime-setup '(slime-fancy))
+
+(defun turn-on-paredit () (paredit-mode 1))
+(add-hook 'clojure-mode-hook 'turn-on-paredit)

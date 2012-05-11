@@ -1,17 +1,73 @@
 
 ;; ----- smex-history -----
 (
- clojure-jack-in
- cd
- lm
- 5x5
- arp
- dbx
- dig
+ customize
+ customize-face
+ magit-status
+ shell
+ undo
+ electric-buffer-list
+ help-with-tutorial
 )
 
 ;; ----- smex-data -----
 (
- (elisp-slime-nav-mode . 1)
- (clojure-jack-in . 1)
+ (elisp-slime-nav-mode . 2)
+ (clojure-jack-in . 18)
+ (slime . 4)
+ (package-list-packages . 5)
+ (cd . 1)
+ (load-library . 4)
+ (color-theme-xp . 1)
+ (color-theme-andreas . 1)
+ (color-theme-arjen . 1)
+ (color-theme-dark-green . 2)
+ (color-theme-dark-font-lock . 2)
+ (color-theme-blue-sea . 1)
+ (color-theme-classic . 1)
+ (color-theme-dark-laptop . 1)
+ (color-theme-midnight . 1)
+ (color-theme-retro-green . 1)
+ (color-theme-aalto-light . 1)
+ (color-theme-ld-dark . 1)
+ (color-theme-print . 1)
+ (color-theme-high-contrast . 1)
+ (color-theme-pok-wob . 1)
+ (color-theme-gnome2 . 1)
+ (color-theme-fischmeister . 1)
+ (color-theme-dark-erc . 1)
+ (color-theme-bharadwaj . 1)
+ (color-theme-compare . 1)
+ (color-theme-jb-simple . 1)
+ (color-theme-charcoal-black . 1)
+ (color-theme-kingsajz . 1)
+ (color-theme-jonadabian . 1)
+ (color-theme-robin-hood . 1)
+ (color-theme-scintilla . 1)
+ (color-theme-shaman . 1)
+ (color-theme-katester . 1)
+ (color-theme-late-night . 1)
+ (color-theme-oswald . 1)
+ (color-theme-rotor . 1)
+ (color-theme-emacs-nw . 1)
+ (color-theme-feng-shui . 1)
+ (color-theme-sitaramv-nt . 1)
+ (color-theme-comidia . 1)
+ (color-theme-calm-forest . 1)
+ (color-theme-blue-eshell . 1)
+ (color-theme-select . 3)
+ (color-theme-vim-colors . 1)
+ (help-with-tutorial . 5)
+ (color-theme-euphoria . 3)
+ (color-theme-billw . 1)
+ (browse-url . 1)
+ (customize-face . 2)
+ (eshell . 2)
+ (magit-status . 19)
+ (replace-regexp . 4)
+ (ediff-revision . 4)
+ (shell . 3)
+ (electric-buffer-list . 1)
+ (undo . 1)
+ (customize . 1)
 )

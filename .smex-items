@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ w3
+ package-list-packages
  join-line
  describe-function
  ediff-revision
- package-list-packages
- run-haskell
  shell
- shrink-window
+ magit-status
 )
 
 ;; ----- smex-data -----
@@ -15,7 +15,7 @@
  (elisp-slime-nav-mode . 2)
  (clojure-jack-in . 19)
  (slime . 4)
- (package-list-packages . 7)
+ (package-list-packages . 8)
  (cd . 1)
  (load-library . 4)
  (color-theme-xp . 1)
@@ -74,4 +74,6 @@
  (run-haskell . 1)
  (describe-function . 1)
  (join-line . 6)
+ (erlang-mode . 1)
+ (w3 . 1)
 )

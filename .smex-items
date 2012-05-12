@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ join-line
+ describe-function
+ ediff-revision
+ package-list-packages
+ run-haskell
  shell
- clojure-jack-in
  shrink-window
- color-theme-select
- customize
- customize-face
- magit-status
 )
 
 ;; ----- smex-data -----
@@ -15,7 +15,7 @@
  (elisp-slime-nav-mode . 2)
  (clojure-jack-in . 19)
  (slime . 4)
- (package-list-packages . 5)
+ (package-list-packages . 7)
  (cd . 1)
  (load-library . 4)
  (color-theme-xp . 1)
@@ -65,10 +65,13 @@
  (eshell . 2)
  (magit-status . 19)
  (replace-regexp . 4)
- (ediff-revision . 4)
+ (ediff-revision . 5)
  (shell . 4)
  (electric-buffer-list . 1)
  (undo . 1)
  (customize . 1)
  (shrink-window . 2)
+ (run-haskell . 1)
+ (describe-function . 1)
+ (join-line . 6)
 )

@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
+ shell
+ clojure-jack-in
+ shrink-window
+ color-theme-select
  customize
  customize-face
  magit-status
- shell
- undo
- electric-buffer-list
- help-with-tutorial
 )
 
 ;; ----- smex-data -----
 (
  (elisp-slime-nav-mode . 2)
- (clojure-jack-in . 18)
+ (clojure-jack-in . 19)
  (slime . 4)
  (package-list-packages . 5)
  (cd . 1)
@@ -55,7 +55,7 @@
  (color-theme-comidia . 1)
  (color-theme-calm-forest . 1)
  (color-theme-blue-eshell . 1)
- (color-theme-select . 3)
+ (color-theme-select . 4)
  (color-theme-vim-colors . 1)
  (help-with-tutorial . 5)
  (color-theme-euphoria . 3)
@@ -66,8 +66,9 @@
  (magit-status . 19)
  (replace-regexp . 4)
  (ediff-revision . 4)
- (shell . 3)
+ (shell . 4)
  (electric-buffer-list . 1)
  (undo . 1)
  (customize . 1)
+ (shrink-window . 2)
 )

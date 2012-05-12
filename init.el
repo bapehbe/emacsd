@@ -25,9 +25,9 @@
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
 (require 'color-theme)
-;(color-theme-euphoria)
+(color-theme-euphoria)
 ;(color-theme-billw)
-(color-theme-charcoal-black)
+;(color-theme-charcoal-black)
 ;(color-theme-gray30)
 
 ;;; cmd key for meta
@@ -46,4 +46,6 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "cornsilk" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "apple" :family "Monaco" :antialias none)))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "cornsilk" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "apple" :family "Monaco")))))
+
+(setq mac-allow-anti-aliasing nil)

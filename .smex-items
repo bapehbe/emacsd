@@ -1,12 +1,12 @@
 
 ;; ----- smex-history -----
 (
+ ediff-revision
+ menu-bar-mode
  w3
  package-list-packages
  join-line
  describe-function
- ediff-revision
- shell
  magit-status
 )
 
@@ -14,7 +14,7 @@
 (
  (elisp-slime-nav-mode . 2)
  (clojure-jack-in . 19)
- (slime . 4)
+ (slime . 6)
  (package-list-packages . 8)
  (cd . 1)
  (load-library . 4)
@@ -65,7 +65,7 @@
  (eshell . 2)
  (magit-status . 19)
  (replace-regexp . 4)
- (ediff-revision . 5)
+ (ediff-revision . 6)
  (shell . 4)
  (electric-buffer-list . 1)
  (undo . 1)
@@ -76,4 +76,5 @@
  (join-line . 6)
  (erlang-mode . 1)
  (w3 . 1)
+ (menu-bar-mode . 1)
 )

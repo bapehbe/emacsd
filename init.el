@@ -50,3 +50,6 @@
  '(default ((t (:inherit nil :stipple nil :background "black" :foreground "cornsilk" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "apple" :family "Monaco")))))
 
 (setq mac-allow-anti-aliasing nil)
+
+;;; there is alway menu in macosx, why disable it in emacs?
+(menu-bar-mode t)

@@ -5,7 +5,7 @@
 (add-to-list 'package-archives '("elpa" . "http://tromey.com/elpa/") t)
 (package-initialize)
 
-; slime
+;;; slime
 ;(setq inferior-lisp-program "/opt/local/bin/sbcl") ; your Lisp system
 ;(add-to-list 'load-path "~/.emacs.d/slime/")  ; your SLIME directory
 ;(require 'slime)
@@ -53,3 +53,8 @@
 
 ;;; there is alway menu in macosx, why disable it in emacs?
 (menu-bar-mode t)
+
+;;; evil
+(add-to-list 'load-path "~/.emacs.d/evil")
+(require 'evil)
+(evil-mode 1)

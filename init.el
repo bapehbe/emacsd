@@ -27,8 +27,8 @@
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
 (require 'color-theme)
-(color-theme-euphoria)
-;(color-theme-billw)
+;(color-theme-euphoria)
+(color-theme-billw)
 ;(color-theme-charcoal-black)
 ;(color-theme-gray30)
 
@@ -42,14 +42,30 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ '(ediff-split-window-function (quote split-window-horizontally))
  '(egg-enable-tooltip t)
+ '(ispell-program-name "/opt/local/bin/ispell")
  '(show-paren-mode t))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "cornsilk" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "apple" :family "Monaco")))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "cornsilk" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "apple" :family "Monaco"))))
+ '(completions-common-part ((t (:inherit default :foreground "red"))))
+ '(diredp-compressed-file-suffix ((t (:foreground "#7b68ee"))))
+ '(diredp-ignored-file-name ((t (:foreground "#aaaaaa"))))
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "Magenta"))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "Purple"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "#8b7500"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "#8b7500"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "#8b7500"))))
+ '(rainbow-delimiters-depth-6-face ((t (:foreground "#8b7500"))))
+ '(rainbow-delimiters-depth-7-face ((t (:foreground "#8b7500"))))
+ '(rainbow-delimiters-depth-8-face ((t (:foreground "#8b7500"))))
+ '(rainbow-delimiters-depth-9-face ((t (:foreground "#8b7500"))))
+ '(rainbow-delimiters-unmatched-face ((t (:foreground "red"))))
+ '(show-paren-match ((((class color) (background light)) (:background "azure2")))))
 
 (setq mac-allow-anti-aliasing nil)
 
@@ -67,8 +83,7 @@
 ;;; read in PATH from .profile
 (when (not (getenv "TERM_PROGRAM"))
     (setenv "PATH"
-            (shell-command-to-string "source $HOME/.profile && printf $PATH"))
-    (push "/sw/bin" exec-path)) 
+            (shell-command-to-string "source $HOME/.profile && printf $PATH"))) 
 
 ;;; egg
 (add-to-list 'load-path "~/.emacs.d/egg")
@@ -81,3 +96,26 @@
 ;;; markdown
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+
+;;; cedet
+(load-file "~/emacs/cedet/common/cedet.el")
+
+;;; nrepl
+(add-hook 'nrepl-interaction-mode-hook 'nrepl-turn-on-eldoc-mode)
+(setq nrepl-popup-stacktraces nil)
+(add-to-list 'same-window-buffer-names "*nrepl*")
+(add-hook 'nrepl-mode-hook 'paredit-mode)
+
+;; Auto complete
+(require 'auto-complete-config)
+(ac-config-default)
+(define-key ac-completing-map "\M-/" 'ac-stop) ; use M-/ to stop completion
+;; ac-nrepl
+(require 'ac-nrepl)
+(add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
+(add-hook 'nrepl-interaction-mode-hook 'ac-nrepl-setup)
+(eval-after-load "auto-complete" '(add-to-list 'ac-modes 'nrepl-mode))
+
+;;; Textile
+(require 'textile-mode)
+(add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))
